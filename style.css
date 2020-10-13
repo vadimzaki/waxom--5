@@ -25,7 +25,7 @@ header {
           align-items: flex-end;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 100px;
+  margin-bottom: 101px;
 }
 
 .menu__list {
