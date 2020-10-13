@@ -1,284 +1,334 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
-header{
-    box-sizing: border-box;
-    padding: 50px 100px;
-    height: 650px;
-    width: 100%x;
-    background-size: cover;
-    background-image: url(img/bg_photo_11949.png);
+header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 50px 100px;
+  height: 650px;
+  width: 100%x;
+  background-size: cover;
+  background-image: url(img/bg_photo_11949.png);
 }
 
-.flex-header{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    margin-bottom: 100px;
-}
-.menu-list{
-    margin-left: 5
-    0px;
-    font: Montserrat;
-font-size: 14px;
-line-height: 1.2;
-font-weight: 300;
-color: #ffffff;
-display: flex;
-list-style: none;
+.flex-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 100px;
 }
 
-.list-href{
-    text-decoration: none;
-    color: #fff;
+.menu__list {
+  margin-left: 5
+ 0px;
+  font: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.menu__list__item {
+  margin-left: 30px;
 }
 
-.menu-list-item{
-    margin-left: 30px;
+.list__href {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
 }
 
-
-.list-href{display: inline-block;}
-.list-href:after {
-    display: block; /*превращаем его в блочный элемент*/
-    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
-    height: 2px; /*задаём высоту линии*/
-    width: 0%; /*задаём начальную ширину элемента (линии)*/
-    background-color: #998675; /*цвет фона элемента*/
-    transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
-    margin-top: 5px;
-    }
-    .list-href:hover:after,
-    .list-href:focus:after {
-width: 100%;
+.list__href:after {
+  display: block;
+  /*превращаем его в блочный элемент*/
+  content: "";
+  /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 2px;
+  /*задаём высоту линии*/
+  width: 0%;
+  /*задаём начальную ширину элемента (линии)*/
+  background-color: #998675;
+  /*цвет фона элемента*/
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+  margin-top: 5px;
 }
 
-.top-header{
-    text-align: center;
+.list__href:hover:after,
+.list__href:focus:after {
+  width: 100%;
 }
 
-.top-heading{
-    font-family: Raleway;
-font-size: 36px;
-line-height: 1.2;
-font-weight: 500;
-color: #ffffff;
-margin-bottom: 10px;
+.top__title {
+  text-align: center;
 }
 
-.top-offer{
-    font-family: Raleway;
-font-size: 52px;
-line-height: 1.2;
-font-weight: 800;
-color: #ffffff;
-margin-bottom: 10px;
+.top__heading {
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
-.top-text{
-    font-family: Montserrat;
-font-size: 16px;
-line-height: 24px;
-font-weight: 300;
-color: #ffffff;
-margin-bottom: 60px;   
- 
+.top__offer {
+  font-family: Raleway;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
-.header-button{
-    text-decoration: none;
-    font-family: Raleway;
-font-size: 14px;
-line-height: 23px;
-font-weight: 800;
-text-transform: uppercase;
-color: #ffffff;
-padding: 15px 40px;
-background-color: #998675;
-border-radius: 10px;
+.top__text {
+  margin: 0 auto;
+  width: 562px;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 60px;
 }
 
-.header-button:hover{box-shadow: 0 0 5px 2px #998675;}
-
-.box-item-b{
-    margin-left: 20px;
+.top__button {
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 15px 40px;
+  background-color: #998675;
+  border-radius: 10px;
 }
 
-.staff{
-    align-items: flex-end;
-    padding: 80px 150px 50px;
-    display: flex;
-    justify-content: space-between;
+.top__button:hover {
+  -webkit-box-shadow: 0 0 5px 2px #998675;
+          box-shadow: 0 0 5px 2px #998675;
 }
 
-.staff-box{
-    width: 24%;
-    text-align: center;
-    display: inline-block;
+.box-item-b {
+  margin-left: 20px;
 }
+
+.staff {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 80px 150px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.staff-box {
+  width: 24%;
+  text-align: center;
+  display: inline-block;
+}
+
 .staff-box:after {
-    display: block; /*превращаем его в блочный элемент*/
-    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
-    height: 5px; /*задаём высоту линии*/
-    width: 0%; /*задаём начальную ширину элемента (линии)*/
-    background-color: #998675; /*цвет фона элемента*/
-    transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
-    margin-top: 20px;
-    opacity: 50%;
-    }
-    .staff-box:hover:after,
-    .staff-box:focus:after {
-width: 100%;
+  display: block;
+  /*превращаем его в блочный элемент*/
+  content: "";
+  /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 5px;
+  /*задаём высоту линии*/
+  width: 0%;
+  /*задаём начальную ширину элемента (линии)*/
+  background-color: #998675;
+  /*цвет фона элемента*/
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+  margin-top: 20px;
+  opacity: 50%;
 }
 
-.staff-icon{
-    margin-bottom: 30px;
+.staff-box:hover:after,
+.staff-box:focus:after {
+  width: 100%;
 }
 
-.staff-name{
-    font-family: Raleway;
-font-size: 22px;
-line-height: 1.2;
-font-weight: 600;
-color: #555555;
-margin-bottom: 20px;
+.staff-icon {
+  margin-bottom: 30px;
 }
 
-.staff-text{
-    font-family: Raleway;
-font-size: 14px;
-line-height: 24px;
-font-weight: 300;
-color: #555555;
+.staff-name {
+  font-family: Raleway;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  margin-bottom: 20px;
 }
 
-.waxom{
-height: 734px;
-background-color: #fbfaf8;
-text-align: center;
-padding: 50px  0;
-box-sizing: border-box;
-}
-.waxom__name{
-color: #555555;
-font-family: Raleway;
-font-size: 30px;
-font-weight: 400;
-margin-bottom: 24px;
-}
-.waxom__text{
-    display: block;
-max-width: 750px;
-margin: 0 auto;
-color: #8c8c8c;
-font-family: Raleway;
-font-size: 16px;
-font-weight: 300;
-line-height: 28px;
-margin-bottom: 88px;    
+.staff-text {
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #555555;
 }
 
-.waxon__browser{
-    margin: 0 auto;
+.waxom {
+  height: 734px;
+  background-color: #fbfaf8;
+  text-align: center;
+  padding: 50px  0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-
-.waxon__offer{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 50px 80px 0;
-height: 100px;
-background-color: #f4f5f8;
-background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+.waxom__name {
+  color: #555555;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 24px;
 }
 
-
-.waxon__offer__name{
-color: #ffffff;
-font-family: Raleway;
-font-size: 28px;
-font-weight: 400;
+.waxom__text {
+  display: block;
+  max-width: 750px;
+  margin: 0 auto;
+  color: #8c8c8c;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 88px;
 }
 
-.waxon__offer__text{
-color: #615855;
-font-family: Montserrat;
-font-size: 18px;
-font-weight: 300;
+.waxon__browser {
+  margin: 0 auto;
 }
 
-
-.projects{
-    text-align: center;
-    padding: 80px 370px;
+.waxon__offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 50px 80px 0;
+  height: 100px;
+  background-color: #f4f5f8;
+  background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
 }
 
-.projects__name{
-color: #555555;
-font-family: Raleway;
-font-size: 34px;
-font-weight: 400;
-margin-bottom: 24px;
+.waxon__offer__name {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 400;
 }
 
+.waxon__offer__text {
+  color: #615855;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+}
 
-.projects__text{
-color: #8c8c8c;
-font-family: Raleway;
-font-size: 20px;
-font-weight: 300;
-line-height: 28px;
-margin: 0 auto;
+.projects {
+  text-align: center;
+  padding: 80px 370px;
+}
+
+.projects__name {
+  color: #555555;
+  font-family: Raleway;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.projects__text {
+  color: #8c8c8c;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.projects__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.projects__nav__href {
+  margin: 10px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #8c8c8c;
+  border: 1px solid #8c8c8c;
+  background-color: #ffffff;
+}
+
+.projects__nav__href:hover {
+  color: #fff;
+  background-color: #998675;
+}
+
+.project__content {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
 margin-bottom: 40px;
 }
 
-
-.projects__nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 40px;
+.project__content__card {
+width: 370px;
+height: 340px;
+background-color: #fbfaf8;
+margin-bottom: 30px;
 }
 
-.projects__nav__href{
-    margin: 10px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 3px;
-    color: #8c8c8c;
-border: 1px solid #8c8c8c;
-background-color: #ffffff;
-}
-.projects__nav__href:hover{
-    color: #fff;
-    background-color: #998675;
+.project__content__card:hover {
+color: #fff;
+background-color: #4e3427;
 }
 
-
-.project__content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.project__content__card{
-    width: 370px;
-    height: 340px;
-    background-color: #fbfaf8;
-    margin-bottom: 30px;
-}
-.project__content__card:hover{
-    color: #fff;
-    background-color: #4e3427;
-}
-
-
-.project__content__name{
+.project__content__name {
 color: #c7b299;
 font-family: Raleway;
 font-size: 20px;
@@ -286,13 +336,12 @@ font-weight: 500;
 margin: 30px 0 10px 20px;
 text-align: left;
 }
-.project__content__name:hover{
-    color: #fff;
 
+.project__content__name:hover {
+color: #fff;
 }
 
-
-.project__content__text{
+.project__content__text {
 color: #d1d1d1;
 font-family: Montserrat;
 font-size: 14px;
@@ -302,14 +351,260 @@ margin-left: 20px;
 text-align: left;
 }
 
+.video{
+height: 705px;
+}
+
+.mobile{
+padding: 80px 400px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.mobile__name{
+font-family: Raleway;
+font-size: 30px;
+line-height: 1.2;
+font-weight: 600;
+color: #555555;
+margin-bottom: 40px;
+}
+
+.mobile__text{
+width: 657px;
+font-family: Raleway;
+font-size: 16px;
+line-height: 28px;
+font-weight: 300;
+color: #8c8c8c;
+margin-bottom: 40px;
+}
+
+.mobile__link{
+list-style-type: none;
+}
+
+.mobile__link__list{
+font-family: Raleway;
+font-size: 16px;
+line-height: 32px;
+font-weight: 300;
+color: #8c8c8c;
+margin-left: 100px;
+list-style: none; 
+background: url(img/arrow__list.png) no-repeat left 50%; 
+padding-left: 50px;
+}
+
+.progress{
+padding: 70px 500px;
+background-color: #f4f5f8;
+background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+display: flex;
+justify-content: space-between;
+}
+
+.progress__box:after {
+  display: block;
+  /*превращаем его в блочный элемент*/
+  content: "";
+  /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 5px;
+  /*задаём высоту линии*/
+  width: 0%;
+  /*задаём начальную ширину элемента (линии)*/
+  background-color: #ffffff;
+  /*цвет фона элемента*/
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+  margin-top: 20px;
+  opacity: 50%;
+}
+
+.progress__box:hover:after,
+.progress__box:focus:after {
+width: 100%;
+}
+
+.progress__box{
+text-align: center;
+}
+.progress__icon{
+margin-bottom: 30px;
+}
+.progress__name{
+font-family: Montserrat;
+font-size: 48px;
+line-height: 36px;
+font-weight: 200;
+color: #ffffff;
+margin-bottom: 20px;
+}
+.progress__text{
+font-family: Montserrat;
+font-size: 14px;
+line-height: 20px;
+font-weight: 300;
+text-transform: uppercase;
+color: #c7b299;
+}
+
+.posts{
+padding:80px 375px ;
+text-align: center;
+}
+.posts__name{
+margin-bottom: 30px;
+font-family: Raleway;
+font-size: 30px;
+line-height: 1.2;
+font-weight: 600;
+color: #555555;
+}
+.posts__text{
+width: 755px;
+margin:0 auto 40px;
+font-family: Montserrat;
+font-size: 16px;
+line-height: 28px;
+font-weight: 300;
+font-family: Raleway;
+font-size: 16px;
+line-height: 28px;
+font-weight: 300;
+color: #000000;
+}
+
+.posts__content{
+display: flex;
+justify-content: space-between;
+}
+
+.posts__content__box{
+width: 370px;
+height: 395px;
+border: 1px solid #f8f8f8;
+text-align: left;
+}
+
+.posts__content__box:hover .posts__content__box__text{
+color: #fff;
+}
+.posts__content__box:hover .posts__content__box__name{
+color:  #c7b299;;
+}
+.posts__content__box:hover{
+background-color: #362f2d;
+color: #fff;
+}
+
+.posts__content__box__img{
+margin-bottom: 30px;
+}
+
+.posts__content__box__name{
+margin: 0 0 20px 30px;
+font-family: Raleway;
+font-size: 20px;
+line-height: 1.2;
+font-weight: 500;
+color: #555555;
+}
+
+.posts__content__box__text{
+width: 300px;
+margin-left: 30px;
+margin-bottom: 30px;
+font-family: Raleway;
+font-size: 14px;
+line-height: 22px;
+font-weight: 300;
+color: #8c8c8c;
+}
+
+.posts__content__box__text__link{
+text-decoration: none;
+margin-left: 30px;
+font-family: Raleway;
+font-size: 14px;
+line-height: 20px;
+font-weight: 300;
+color: #c7b299;
+}
+
+.forma{
+height: 470px;
+background-image: url(img/bg_photo_forma.png);
+padding: 30px 375px;
+box-sizing: border-box;
+}
+
+.forma__name{
+text-align: center;
+font-family: Raleway;
+font-size: 34px;
+line-height: 1.2;
+font-weight: 500;
+color: #fff;
+margin-bottom: 30px;
+}
+
+input[type="text"] {
+font-family: Raleway;
+font-size: 15px;
+line-height: 1.2;
+font-weight: 500;
+color: #c7b299;
+margin-bottom: 10px;
+border-radius: 10px;
+width: 500px;
+height: 40px;
+background-color: #ffffff;
+box-sizing: border-box;
+padding-left: 20px;
+}
+input[type="email"] {
+font-family: Raleway;
+font-size: 15px;
+line-height: 1.2;
+font-weight: 500;
+color: #c7b299;
+margin-bottom: 10px;
+border-radius: 10px;
+width: 500px;
+height: 40px;
+background-color: #ffffff;
+box-sizing: border-box;
+padding-left: 20px;
+}
+
+.forma__message{
+font-family: Raleway;
+font-size: 15px;
+line-height: 1.2;
+font-weight: 500; 
+color: #c7b299;  
+margin-bottom: 20px;
+border-radius: 10px;
+width: 500px;
+height: 170px;
+background-color: #ffffff;
+box-sizing: border-box;
+padding: 10px 0 0 20px;
+}
+
+input[type="submit"]{
+box-sizing: border-box;
+padding: 5px 10px;
+font-family: Raleway;
+font-size: 15px;
+line-height: 1.2;
+font-weight: 500; 
+color: #000000;
+border-radius: 10px;
+}
 
 
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */
