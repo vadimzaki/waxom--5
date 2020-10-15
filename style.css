@@ -14,6 +14,7 @@ header {
   width: 100%x;
   background-size: cover;
   background-image: url(img/bg_photo_11949.png);
+  background-attachment: fixed;
 }
 
 .flex-header {
@@ -73,9 +74,7 @@ header {
   width: 100%;
 }
 
-.top__title {
-  text-align: center;
-}
+
 
 .top__heading {
   font-family: Raleway;
@@ -83,7 +82,8 @@ header {
   line-height: 1.2;
   font-weight: 500;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+  max-width: 470px;
 }
 
 .top__offer {
@@ -92,7 +92,8 @@ header {
   line-height: 1.2;
   font-weight: 800;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+    max-width: 600px;
 }
 
 .top__text {
@@ -107,6 +108,10 @@ header {
 }
 
 .top__button {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 100px;
   text-decoration: none;
   font-family: Raleway;
   font-size: 14px;
@@ -224,7 +229,7 @@ header {
   margin: 0 auto;
 }
 
-.waxon__offer {
+.waxon__aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,14 +245,14 @@ header {
   background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
 }
 
-.waxon__offer__name {
+.waxon__aside__name {
   color: #ffffff;
   font-family: Raleway;
   font-size: 28px;
   font-weight: 400;
 }
 
-.waxon__offer__text {
+.waxon__aside__text {
   color: #615855;
   font-family: Montserrat;
   font-size: 18px;
@@ -539,6 +544,7 @@ height: 470px;
 background-image: url(img/bg_photo_forma.png);
 padding: 30px 375px;
 box-sizing: border-box;
+background-attachment: fixed;
 }
 
 .forma__name{
